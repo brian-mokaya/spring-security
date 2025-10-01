@@ -53,6 +53,7 @@ public class SecurityConfig {
                 .password("{noop}password2")
                 .roles("ADMIN")
                 .build();
+
         JdbcUserDetailsManager userDetailsManager = new JdbcUserDetailsManager(dataSource);
 //        return new InMemoryUserDetailsManager(user1, user2);
         userDetailsManager.createUser(user1);
