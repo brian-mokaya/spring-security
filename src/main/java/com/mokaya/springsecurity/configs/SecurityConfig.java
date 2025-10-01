@@ -50,7 +50,7 @@ public class SecurityConfig {
                 .roles("USER")
                 .build();
 
-        UserDetails user2 = User.withUsername("User2")
+        UserDetails user2 = User.withUsername("user2")
                 .password(passwordEncoder().encode("password2"))
                 .roles("ADMIN")
                 .build();
